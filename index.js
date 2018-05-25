@@ -5,9 +5,6 @@ module.exports = {
         "eslint:recommended",
     ],
     "rules": {
-        //
-        // general style guide
-        //
         "indent": [
             "error",
             4,

@@ -9,9 +9,6 @@ module.exports = {
         "vue"
     ],
     "rules": {
-        //
-        // vue.js style guide
-        //
         "vue/html-indent": [
             "error",
             4
