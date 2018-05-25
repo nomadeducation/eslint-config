@@ -1,14 +1,14 @@
-# Code style
+# Nomad Education Code style
 
-We're using `eslint` to enforce our common Javascript code style!
+We're using `eslint` to enforce a common Javascript style to our code.
 
 ## Prerequisites
 
-You'll need to use the `v4` at least.
+You'll need to use at least the version **4** of `eslint`.
 
 ## Installation
 
-From the [official page](https://eslint.org/docs/developer-guide/shareable-configs):
+From the [official page](https://eslint.org/docs/developer-guide/shareable-configs), use the `extends` property in your `.eslintrc` file:
 
 ```js
 module.exports = {
