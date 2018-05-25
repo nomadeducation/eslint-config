@@ -57,13 +57,14 @@ module.exports = {
         "object-curly-newline": [
             "error",
             {
-                "consistent": true
+                "multiline": true
             }
         ],
         "array-bracket-newline": [
             "error",
             {
-                "consistent": true
+                "multiline": true,
+                "minItems": 2
             }
         ],
         "operator-linebreak": [
