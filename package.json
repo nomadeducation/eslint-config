@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-nomadeducation",
+  "version": "1.0.0",
+  "author": "Nomad Education",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": ">= 4"
+  }
+}
