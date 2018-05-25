@@ -47,7 +47,7 @@ module.exports = {
         "newline-per-chained-call": [
             "warn",
             {
-                "ignoreChainWithDepth": 2
+                "ignoreChainWithDepth": 1
             }
         ],
         "object-property-newline": "error",
