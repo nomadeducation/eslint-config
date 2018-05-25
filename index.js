@@ -146,7 +146,7 @@ module.exports = {
         ],
         "comma-dangle": [
             "error",
-            "always-multiline"
+            "only-multiline"
         ],
         "comma-spacing": [
             "error",
@@ -179,6 +179,6 @@ module.exports = {
         "no-var": "error",
         "prefer-const": "warn",
         "prefer-template": "warn",
-        "radix": "error",
+        "radix": "error"
     }
 };
