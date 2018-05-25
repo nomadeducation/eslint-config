@@ -8,6 +8,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "scripts" :{
+    "postversion": "git push && git push --tags"
+  },
   "peerDependencies": {
     "eslint": ">= 4"
   }
