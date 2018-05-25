@@ -2,7 +2,7 @@ module.exports = {
     // recommended rules:
     // - http://eslint.org/docs/rules
     "extends": [
-        "eslint:recommended",
+        "eslint:recommended"
     ],
     "rules": {
         "indent": [
@@ -94,23 +94,26 @@ module.exports = {
             "never"
         ],
         "no-template-curly-in-string": "error",
-        "valid-jsdoc": ["error", {
-            "prefer": {
-                "arg": "param",
-                "argument": "param",
-                "class": "constructor",
-                "return": "returns",
-                "virtual": "abstract"
-            },
-            "preferType": {
-                "boolean": "Boolean",
-                "number": "Number",
-                "string": "String"
-            },
-            "requireParamDescription": false,
-            "requireReturnDescription": false,
-            "requireReturn": false
-        }],
+        "valid-jsdoc": [
+            "error",
+            {
+                "prefer": {
+                    "arg": "param",
+                    "argument": "param",
+                    "class": "constructor",
+                    "return": "returns",
+                    "virtual": "abstract"
+                },
+                "preferType": {
+                    "boolean": "Boolean",
+                    "number": "Number",
+                    "string": "String"
+                },
+                "requireParamDescription": false,
+                "requireReturnDescription": false,
+                "requireReturn": false
+            }
+        ],
         "block-scoped-var": "error",
         // we relax this rule since we're in a server context
         "no-console": "off",
