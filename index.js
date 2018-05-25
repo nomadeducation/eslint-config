@@ -44,12 +44,6 @@ module.exports = {
             "error",
             "unix"
         ],
-        "newline-per-chained-call": [
-            "warn",
-            {
-                "ignoreChainWithDepth": 1
-            }
-        ],
         "object-property-newline": "error",
         "object-curly-newline": [
             "error",
