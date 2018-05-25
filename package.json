@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nomadeducation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Nomad Education",
   "keywords": [
     "eslint",
@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "scripts" :{
+  "scripts": {
     "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
