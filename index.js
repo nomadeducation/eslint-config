@@ -48,15 +48,12 @@ module.exports = {
         "object-curly-newline": [
             "error",
             {
-                "multiline": true
+                "consistent": true
             }
         ],
         "array-bracket-newline": [
             "error",
-            {
-                "multiline": true,
-                "minItems": 2
-            }
+            "consistent"
         ],
         "operator-linebreak": [
             "error",
