@@ -9,6 +9,8 @@ module.exports = {
         "vue"
     ],
     "rules": {
+        // we must avoid "console" calls in the frontend context
+        "no-console": "error",
         "vue/html-indent": [
             "error",
             4
