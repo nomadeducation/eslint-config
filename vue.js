@@ -21,6 +21,6 @@ module.exports = {
             {
                 "switchCase": 1
             }
-        ],
+        ]
     }
 };
