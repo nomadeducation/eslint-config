@@ -74,7 +74,10 @@ module.exports = {
                 "maxBOF": 0
             }
         ],
-        "no-extra-parens": "error",
+        "no-extra-parens": [
+            "error",
+            "functions"
+        ],
         "new-parens": "error",
         "object-property-newline": "error",
         "object-curly-newline": [
