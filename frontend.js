@@ -1,5 +1,9 @@
 module.exports = {
+    "env": {
+        "es6": true
+    },
     "parserOptions": {
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     // recommended rules:
@@ -13,8 +17,13 @@ module.exports = {
         //
         "no-implicit-globals": "error",
         "no-implied-eval": "error",
-        // we must avoid "console" calls in the frontend context
-        "no-console": "error",
+        // limit the usage to "console.error" calls only
+        "no-console": [
+            "error",
+            {
+                allow: ["error"]
+            }
+        ],
         "no-script-url": "error",
         //
         // vue.js
