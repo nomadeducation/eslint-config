@@ -90,8 +90,7 @@ module.exports = {
         "array-element-newline": [
             "error",
             {
-                "multiline": true,
-                "minItems": 2
+                "multiline": true
             }
         ],
         "operator-linebreak": [
@@ -257,7 +256,6 @@ module.exports = {
             "error",
             "last"
         ],
-        "radix": "error",
-        "require-await": "error"
+        "radix": "error"
     }
 };
