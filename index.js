@@ -1,26 +1,40 @@
 module.exports = {
+    "env": {
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
     // recommended rules:
     // - http://eslint.org/docs/rules
-    "extends": [
-        "eslint:recommended"
-    ],
+    "extends": "eslint:recommended",
     "rules": {
+        //
+        // node.js
+        //
+        "no-sync": "error",
+        "no-buffer-constructor": "error",
+        "no-path-concat": "error",
+        // we relax this rule since we're in a server context
+        "no-console": "off",
+        //
+        // general
+        //
         "indent": [
             "error",
             4,
             {
                 "SwitchCase": 1,
                 "MemberExpression": 0,
-                "FunctionDeclaration": {
-                    "parameters": 1
-                },
-                "FunctionExpression": {
-                    "parameters": 1
-                },
-                "CallExpression": {
-                    "arguments": 1
-                }
+                "FunctionDeclaration": {"parameters": 1},
+                "FunctionExpression": {"parameters": 1},
+                "CallExpression": {"arguments": 1}
             }
+        ],
+        "no-tabs": "error",
+        "unicode-bom": [
+            "error",
+            "never"
         ],
         "max-len": [
             "warn",
@@ -44,6 +58,24 @@ module.exports = {
             "error",
             "unix"
         ],
+        // the following rule will force the trailing line break
+        // at the end of a file (the editor config isn't working sometimes)
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "no-trailing-spaces": "error",
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 0
+            }
+        ],
+        "no-extra-parens": "error",
+        "new-parens": "error",
         "object-property-newline": "error",
         "object-curly-newline": [
             "error",
@@ -54,6 +86,13 @@ module.exports = {
         "array-bracket-newline": [
             "error",
             "consistent"
+        ],
+        "array-element-newline": [
+            "error",
+            {
+                "multiline": true,
+                "minItems": 2
+            }
         ],
         "operator-linebreak": [
             "error",
@@ -106,14 +145,30 @@ module.exports = {
             }
         ],
         "block-scoped-var": "error",
-        // we relax this rule since we're in a server context
-        "no-console": "off",
         "no-eval": "error",
         "no-extend-native": "error",
-        "no-multi-spaces": "error",
+        "no-implicit-coercion": "error",
+        "no-new-wrappers": "error",
+        "no-return-assign": "error",
+        "no-return-await": "error",
+        "no-self-compare": "error",
+        "no-throw-literal": "error",
+        "no-useless-concat": "error",
         "no-with": "error",
         "no-undefined": "error",
-        "no-sync": "error",
+        "no-nested-ternary": "error",
+        "no-lonely-if": "error",
+        "no-multi-assign": "error",
+        "no-new-symbol": "error",
+        "no-var": "error",
+        "prefer-const": "warn",
+        "prefer-template": "warn",
+        "prefer-promise-reject-errors": [
+            "error",
+            {
+                "allowEmptyReject": true
+            }
+        ],
         "brace-style": [
             "error",
             "1tbs",
@@ -126,6 +181,48 @@ module.exports = {
             "error",
             "always"
         ],
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true,
+                "mode": "strict"
+            }
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "arrow-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "generator-star-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "yield-star-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "switch-colon-spacing": "error",
+        "template-tag-spacing": "error",
         "space-before-blocks": [
             "error",
             "always"
@@ -133,6 +230,10 @@ module.exports = {
         "space-in-parens": [
             "error",
             "never"
+        ],
+        "spaced-comment": [
+            "error",
+            "always"
         ],
         "block-spacing": "error",
         "camelcase": [
@@ -156,26 +257,7 @@ module.exports = {
             "error",
             "last"
         ],
-        "key-spacing": [
-            "error",
-            {
-                "beforeColon": false,
-                "afterColon": true,
-                "mode": "strict"
-            }
-        ],
-        "keyword-spacing": [
-            "error",
-            {
-                "before": true,
-                "after": true
-            }
-        ],
-        "no-nested-ternary": "error",
-        "no-new-symbol": "error",
-        "no-var": "error",
-        "prefer-const": "warn",
-        "prefer-template": "warn",
-        "radix": "error"
+        "radix": "error",
+        "require-await": "error"
     }
 };
