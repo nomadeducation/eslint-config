@@ -87,12 +87,6 @@ module.exports = {
             "error",
             "consistent"
         ],
-        "array-element-newline": [
-            "error",
-            {
-                "multiline": true
-            }
-        ],
         "operator-linebreak": [
             "error",
             "after"
