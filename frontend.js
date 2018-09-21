@@ -17,11 +17,14 @@ module.exports = {
         //
         "no-implicit-globals": "error",
         "no-implied-eval": "error",
-        // limit the usage to "console.error" calls only
+        // limit the usage of "console" calls
         "no-console": [
             "error",
             {
-                allow: ["error"]
+                allow: [
+                    "warn",
+                    "error"
+                ]
             }
         ],
         "no-script-url": "error",
