@@ -80,12 +80,7 @@ module.exports = {
         ],
         "new-parens": "error",
         "object-property-newline": "error",
-        "object-curly-newline": [
-            "error",
-            {
-                "consistent": true
-            }
-        ],
+        "object-curly-newline": "error",
         "array-bracket-newline": [
             "error",
             "consistent"

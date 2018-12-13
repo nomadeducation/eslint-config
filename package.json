@@ -12,6 +12,6 @@
     "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
-    "eslint": ">= 4"
+    "eslint": ">= 5"
   }
 }
