@@ -235,7 +235,8 @@ module.exports = {
         "camelcase": [
             "error",
             {
-                "properties": "never"
+                "properties": "never",
+                "ignoreDestructuring": true
             }
         ],
         "comma-dangle": [
