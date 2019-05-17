@@ -148,7 +148,6 @@ module.exports = {
         "no-with": "error",
         "no-undefined": "error",
         "no-nested-ternary": "error",
-        "no-lonely-if": "error",
         "no-multi-assign": "error",
         "no-new-symbol": "error",
         "no-var": "error",
