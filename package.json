@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nomadeducation",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "author": "Nomad Education",
   "keywords": [
     "eslint",
@@ -12,6 +12,6 @@
     "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">= 8"
   }
 }
