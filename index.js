@@ -1,9 +1,10 @@
 module.exports = {
     "env": {
-        "es6": true
+        "es2024": true,
+        "node": true,
     },
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 2024
     },
     // recommended rules:
     // - http://eslint.org/docs/rules
@@ -39,7 +40,7 @@ module.exports = {
         "max-len": [
             "warn",
             {
-                "code": 120,
+                "code": 160,
                 "ignoreComments": true,
                 "ignoreUrls": true,
                 "ignoreStrings": true,
